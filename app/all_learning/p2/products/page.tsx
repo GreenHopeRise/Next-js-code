@@ -1,3 +1,6 @@
+import ProductCategory from "./ProductCategory";
+import ProductSearch from "./ProductSearch";
+
 interface ProductPageProps {
     searchParams: Promise<{
         search?: string;
@@ -21,6 +24,8 @@ return (
       <h1 className="text-2xl font-bold">
         Products
       </h1>
+      <ProductSearch/>
+      <ProductCategory/>
 
       <div>
         <p>Search: {search || "No search"}</p>
